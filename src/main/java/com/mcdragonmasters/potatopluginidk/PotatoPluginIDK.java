@@ -1,7 +1,5 @@
 package com.mcdragonmasters.potatopluginidk;
 
-import ch.njol.skript.SkriptAddon;
-import ch.njol.skript.bstats.bukkit.Metrics;
 import net.md_5.bungee.api.ChatColor;
 import org.bukkit.Bukkit;
 import org.bukkit.configuration.file.FileConfiguration;
@@ -13,10 +11,9 @@ public class PotatoPluginIDK extends JavaPlugin {
 
     public static PotatoPluginIDK instance;
     public static FileConfiguration config;
-    private static Metrics metrics;
+    //private static Metrics metrics;
     private static final String prefix = net.md_5.bungee.api.ChatColor.of("#40ff00")
             + "[PotatoSK] " + ChatColor.RESET;
-    SkriptAddon addon;
 
     public void onEnable() {
 
