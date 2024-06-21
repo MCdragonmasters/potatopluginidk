@@ -1,0 +1,8 @@
+name: PotatoPluginIDK
+authors: [ MCdragonmasters ]
+website: https://github.com/MCdragonmasters/potatopluginidk
+version: @version@
+main: com.mcdragonmasters.potatopluginidk.potatopluginidk
+api-version: '1.20'
+depend:
+  - Skript
