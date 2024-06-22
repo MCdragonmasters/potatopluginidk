@@ -31,6 +31,14 @@ def oldestJava = 21
 tasks.withType(JavaCompile).configureEach {
     options.compilerArgs += ['-source', '' + oldestJava, '-target', '' + oldestJava]
 }
+shadowJar {
+    dependencies {
+        include dependency("dev.jorel:commandapi-bukkit-shade:9.5.0")
+    }
+
+    // TODO: Change this to my own package name
+    relocate("dev.jorel.commandapi", "com.mcdragonmasters.potatopluginidk.commandapi")
+}
 
 processResources {
     filter ReplaceTokens, tokens: [
